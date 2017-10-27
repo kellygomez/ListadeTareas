@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Lista de Tareas</string>
+    <string name="edit_text_usuario_hint">Usuario</string>
+    <string name="edit_text_password_hint">Contraseña</string>
+    <string name="ingresar_text">Ingresar</string>
+    <string name="text_link_registrarse">¿No tienes cuenta? Registrate</string>
+    <string name="hint_nombre_apellidos">Nombre y Apellidos</string>
+    <string name="email">Email</string>
+    <string name="ya_tienes_usuario">Ya Tienes Usuario</string>
+    <string name="registrar">Registrar</string>
+    <string name="nueva_tarea">Nueva Tarea</string>
+    <string name="la_tarea">escriba su tarea</string>
+    <string name="la_fecha">ingrese la fecha</string>
+    <string name="agregar_tarea">Agregar</string>
+</resources>
