@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "728303099381",
+    "firebase_url": "https://todoautencacion.firebaseio.com",
+    "project_id": "todoautencacion",
+    "storage_bucket": "todoautencacion.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728303099381:android:14c530617c20134d",
+        "android_client_info": {
+          "package_name": "com.electiva.kellyhuber.listadetareas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728303099381-5pd77ke0vukqhouuhq1ifgqa9njkp26f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7GZlxYoj2uT6zZ414kBLlpxOrCM2dDUc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

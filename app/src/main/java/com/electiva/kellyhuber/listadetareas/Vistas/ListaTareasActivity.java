@@ -69,9 +69,9 @@ public class ListaTareasActivity extends AppCompatActivity implements ILisView, 
         AlertDialog.Builder popupview = new AlertDialog.Builder(ListaTareasActivity.this);
         View view1 = getLayoutInflater().inflate(R.layout.agrega_tarea,null);
 
-        editTarea = (EditText)view1.findViewById(R.id.edtTarea);
-        editFecha = (EditText)view1.findViewById(R.id.edtFecha);
-        btnAgregar = (Button)view1.findViewById(R.id.btnAgregar);
+        editTarea = view1.findViewById(R.id.edtTarea);
+        editFecha = view1.findViewById(R.id.edtFecha);
+        btnAgregar = view1.findViewById(R.id.btnAgregar);
 
         editFecha.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,7 +84,7 @@ public class ListaTareasActivity extends AppCompatActivity implements ILisView, 
             @Override
             public void onClick(View view) {
                 if(agregarTarea()){
-                    Toast.makeText(ListaTareasActivity.this,"Ingrese todos los campo",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ListaTareasActivity.this, R.string.ingrese_todos_campos,Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -100,7 +100,7 @@ public class ListaTareasActivity extends AppCompatActivity implements ILisView, 
         //se envia los datos capturados de la descripcion y fecha al presenter
         String descripcion = editTarea.getText().toString();
         String fecha = editFecha.getText().toString();
-        if(descripcion.isEmpty() && fecha.isEmpty()){
+        if(descripcion.isEmpty() || fecha.isEmpty()){
             return true;
         }else {
             tareaPresenter.addTarea(descripcion, fecha);
